@@ -1,11 +1,20 @@
-
 import './App.css';
+import React from 'react';
+import { Container } from '@material-ui/core';
+import Nav from './components/Nav';
+import About from './components/About'
+import Skill from './components/Skill'
+import Project from './components/Project'
 
 function App() {
     return (
-        <div className="App">
+        <Container className="App">
+            <Nav />
             <h1>My Portfolio</h1>
-        </div>
+            <About />
+            <Skill />
+            <Project />
+        </Container>
     );
 }
 
