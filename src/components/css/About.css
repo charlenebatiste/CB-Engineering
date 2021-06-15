@@ -1,0 +1,8 @@
+.AboutSection {
+	display: flex;
+	background-color: #e6cabf;
+	padding: 2%;
+}
+.aboutImage__content {
+	width: 100%;
+}
