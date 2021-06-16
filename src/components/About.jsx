@@ -1,88 +1,79 @@
-import React from "react";
 import "./css/About.css";
 import headshot from "./assets/headshot.JPG";
-import {
-	Paper,
-	Typography,
-	makeStyles,
-	Grid,
-} from "@material-ui/core";
+import React from "react";
 
-const useStyles = makeStyles((theme) => ({
-	paper: {
-		padding: theme.spacing(2),
+import {
+	makeStyles,
+	Card,
+	CardContent,
+	CardMedia,
+	Typography,
+} from "@material-ui/core/";
+
+const useStyles = makeStyles(() => ({
+	root: {
+		display: "flex",
+	},
+	details: {
+		display: "flex",
+		flexDirection: "column",
+	},
+	cover: {
+		width: "50vw",
 	},
 }));
 
-const About = () => {
+export default function About() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
-			<Grid
-				container
-				className="AboutSection"
-				spacing={3}
-			>
-				<Grid item xs={9}>
-					<Paper
-						className={classes.paper}
+		<div className="AboutSection">
+			<Card className={classes.root}>
+				<div className={classes.details}>
+					<CardContent
+						className={
+							classes.content
+						}
+						id="cardWrapper"
 					>
 						<Typography
+							component="h4"
 							variant="h4"
-							className="about__header"
 						>
 							About Me
 						</Typography>
-						<Typography
-							variant="h5"
-							className="about__header"
-						>
-							<div>
-								I am a full-stack
-								software engineer
-								with a passion for
-								creating
-								responsive
-								products and clean
-								designs oriented
-								around the user
-								experience. I
-								thrive in
-								creative,
-								team-centric
-								environments where
-								my previous work
-								as a 911
-								Communications
-								Officer lends to a
-								balanced approach
-								to challenging
-								situations. From
-								my ability to
-								determine problems
-								to adjusting plans
-								quickly I strive
-								to develop elegant
-								solutions out of
-								stressful
-								situations.
-							</div>
+						<Typography className="card__text">
+							I am a full-stack
+							software engineer with
+							a passion for creating
+							responsive products
+							and clean designs
+							oriented around the
+							user experience. I
+							thrive in creative,
+							team-centric
+							environments where my
+							previous work as a 911
+							Communications Officer
+							lends to a balanced
+							approach to
+							challenging
+							situations. From my
+							ability to determine
+							problems to adjusting
+							plans quickly I strive
+							to develop elegant
+							solutions out of
+							stressful situations.
 						</Typography>
-					</Paper>
-				</Grid>
-				<Grid item xs={3}>
-					<div className="aboutImage">
-						<img
-							className="aboutImage__content"
-							src={headshot}
-							alt="headshot"
-						/>
-					</div>
-				</Grid>
-			</Grid>
+					</CardContent>
+				</div>
+				<CardMedia
+					className={classes.cover}
+					image={headshot}
+					title="Live from space album cover"
+				/>
+			</Card>
 		</div>
 	);
-};
-
-export default About;
+}

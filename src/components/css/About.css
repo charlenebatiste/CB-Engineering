@@ -3,6 +3,10 @@
 	background-color: #e6cabf;
 	padding: 2%;
 }
-.aboutImage__content {
-	width: 100%;
+#cardWrapper {
+	padding: 10vh 0;
+}
+.card__text {
+	font-size: 1.2em;
+	line-height: 2em;
 }

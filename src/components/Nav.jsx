@@ -1,35 +1,62 @@
 import React from "react";
+import "./css/Nav.css";
 
-import {
-	Typography,
-	Link,
-} from "@material-ui/core";
+import { Typography } from "@material-ui/core";
+
+import { HashLink as Link } from "react-router-hash-link";
 
 const Nav = () => {
 	return (
-		<Typography className="navWrapper">
-			<Link href="/" variant="body1">
-				Home
-			</Link>{" "}
-			<Link href="/about" variant="body1">
-				About Me
-			</Link>{" "}
-			<Link href="/skills" variant="body1">
-				Skills
-			</Link>{" "}
-			<Link
-				href="/projects"
-				variant="body1"
-			>
-				Projects
-			</Link>{" "}
-			<Link
-				href="/projects"
-				variant="body1"
-			>
-				Contact Me
-			</Link>{" "}
-		</Typography>
+		<div className="NavSection">
+			<Typography className="navWrapper">
+				<div>
+					<Link
+						className="navLink"
+						smooth
+						to="#about"
+					>
+						About Me
+					</Link>
+				</div>
+				<div>
+					<Link
+						className="navLink"
+						smooth
+						to="#skills"
+					>
+						Skills
+					</Link>
+				</div>
+				<div>
+					<Link
+						className="navLink"
+						id="logo"
+						smooth
+						to="#home"
+					>
+						cb
+					</Link>
+				</div>
+				<div>
+					<Link
+						className="navLink"
+						smooth
+						to="#projects"
+					>
+						Projects
+					</Link>
+				</div>
+				<div>
+					<Link
+						className="navLink"
+						smooth
+						to="#contact"
+					>
+						Contact Me
+					</Link>{" "}
+				</div>
+			</Typography>
+		</div>
 	);
 };
 

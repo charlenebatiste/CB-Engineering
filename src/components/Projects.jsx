@@ -33,7 +33,10 @@ export default function ComplexGrid() {
 	const classes = useStyles();
 
 	return (
-		<section className="ProjectWrapper">
+		<section
+			className="ProjectWrapper"
+			id="projects"
+		>
 			<div className={classes.root}>
 				<Paper className={classes.paper}>
 					<Grid container spacing={2}>
