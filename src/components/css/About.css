@@ -1,6 +1,7 @@
 .AboutSection {
 	display: flex;
-	background-color: #e6cabf;
+	flex-wrap: wrap;
+	background-color: #6c4a3e;
 	padding: 2%;
 }
 #cardWrapper {
@@ -9,4 +10,7 @@
 .card__text {
 	font-size: 1.2em;
 	line-height: 2em;
+}
+.img__container {
+	height: 20%;
 }
