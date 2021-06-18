@@ -1,4 +1,8 @@
-.skillsWrapper {
-	background-color: #a5acb1;
+.SkillsSection {
+	background-color: #9b7669;
 	padding: 2em;
+}
+.skills__header {
+	text-align: center;
+	padding-bottom: 2%;
 }

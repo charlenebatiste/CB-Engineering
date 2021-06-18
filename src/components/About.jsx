@@ -3,43 +3,62 @@ import headshot from "./assets/headshot.JPG";
 import React from "react";
 
 import {
+	makeStyles,
 	Grid,
-	Typography,
 	CardMedia,
 } from "@material-ui/core/";
+const useStyles = makeStyles({
+	media: {
+		// height: "80%",
+		// objectFit: "scale-down",
+		borderRadius: "10%",
+	},
+});
 
-export default function About() {
+const About = () => {
+	const classes = useStyles();
 	return (
-		<div
-			className="AboutSection"
-			id="cardWrapper"
-		>
+		<div className="AboutSection" id="about">
 			<div className="about__header">
-				<Typography
-					component="h4"
-					variant="h4"
-				>
+				<h1 className="heading">
 					About Me
-				</Typography>
+				</h1>
 			</div>
-			<Grid container>
-				<Grid item xs={12} sm={6} md={4}>
+			<Grid
+				container
+				className="about__content"
+				spacing="2"
+			>
+				<Grid
+					item
+					className="grid__item"
+					xs={10}
+					sm={5}
+					md={4}
+					lg={3}
+				>
 					<CardMedia
+						className={classes.media}
 						component="img"
 						image={headshot}
 					/>
-					{/* <img src={headshot} /> */}
 				</Grid>
-				<Grid item xs={12} sm={6}>
-					<Typography
-						className="card__text"
-						component="p"
-					>
-						I am a full-stack software
-						engineer with a passion
-						for creating responsive
-						products and clean designs
-						oriented around the user
+				<Grid
+					item
+					className="grid__item"
+					xs={12}
+					sm={7}
+					md={8}
+					lg={9}
+				>
+					<p className="card__text">
+						Hi. My name is Charlene
+						Batiste and I am a
+						Software Engineer with a
+						passion for creating
+						responsive products and
+						clean designs oriented
+						around the user
 						experience. I thrive in
 						creative, team-centric
 						environments where my
@@ -54,9 +73,11 @@ export default function About() {
 						develop elegant solutions
 						out of stressful
 						situations.
-					</Typography>
+					</p>
 				</Grid>
 			</Grid>
 		</div>
 	);
-}
+};
+
+export default About;

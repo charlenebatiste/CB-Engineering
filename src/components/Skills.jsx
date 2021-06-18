@@ -3,7 +3,6 @@ import "./css/Skill.css";
 import React from "react";
 import {
 	makeStyles,
-	Typography,
 	Paper,
 	Grid,
 } from "@material-ui/core/";
@@ -15,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 	paper: {
 		padding: theme.spacing(2),
 		textAlign: "center",
-		color: theme.palette.text.secondary,
 	},
 }));
 
@@ -24,12 +22,14 @@ export default function Skills() {
 
 	return (
 		<section
-			className="skillsWrapper"
+			className="SkillsSection"
 			id="skills"
 		>
-			<Typography component="h2">
-				Skills
-			</Typography>
+			<div className="skills__header">
+				<h1 className="heading">
+					Technical Skills
+				</h1>
+			</div>
 			<div className={classes.root}>
 				<Grid container spacing={3}>
 					<Grid item xs={6} sm={3}>
@@ -38,7 +38,27 @@ export default function Skills() {
 								classes.paper
 							}
 						>
-							HTML
+							Front End
+							<div>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>
+										Javascript
+									</li>
+									<li>
+										Responsive
+										Design
+									</li>
+									<li>
+										Bootstrap
+									</li>
+									<li>
+										Materialize
+									</li>
+									<li>React</li>
+								</ul>
+							</div>
 						</Paper>
 					</Grid>
 					<Grid item xs={6} sm={3}>
@@ -47,7 +67,18 @@ export default function Skills() {
 								classes.paper
 							}
 						>
-							Javascript
+							Back-End
+							<ul>
+								<li>NodeJS</li>
+								<li>Express</li>
+								<li>SQL</li>
+								<li>MongoDB</li>
+								<li>AJAX</li>
+								<li>
+									RESTful
+									Programming
+								</li>
+							</ul>
 						</Paper>
 					</Grid>
 					<Grid item xs={6} sm={3}>
@@ -56,161 +87,24 @@ export default function Skills() {
 								classes.paper
 							}
 						>
-							CSS
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Bootstrap
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Materialize
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							NodeJS
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Express
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							React
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							SQL
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							MongoDB
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Git
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Github
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Slack
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Responsive Design
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Wireframes
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Balsamiq
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							LucidChart
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							Object-Oriented
-							Programming
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							AJAX
-						</Paper>
-					</Grid>
-					<Grid item xs={6} sm={3}>
-						<Paper
-							className={
-								classes.paper
-							}
-						>
-							RESTful Programming
+							Additional
+							<ul>
+								<li>Git</li>
+								<li>Github</li>
+								<li>Slack</li>
+
+								<li>
+									Object-Oriented
+									Programming
+								</li>
+								<li>
+									Wireframes
+								</li>
+								<li>Balsamiq</li>
+								<li>
+									LucidChart
+								</li>
+							</ul>
 						</Paper>
 					</Grid>
 				</Grid>

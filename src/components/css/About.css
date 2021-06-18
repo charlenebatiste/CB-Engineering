@@ -1,16 +1,21 @@
 .AboutSection {
-	display: flex;
-	flex-wrap: wrap;
 	background-color: #6c4a3e;
 	padding: 2%;
 }
-#cardWrapper {
-	padding: 10vh 0;
+
+.about__content {
+	justify-content: space-around;
 }
+
 .card__text {
-	font-size: 1.2em;
-	line-height: 2em;
+	font-size: 1.4em;
 }
-.img__container {
-	height: 20%;
+
+.about__header {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.heading {
+	font-family: "Nanum Myeongjo", serif;
 }
