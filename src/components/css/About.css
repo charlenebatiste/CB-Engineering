@@ -4,7 +4,10 @@
 		#6c4a3e,
 		#9b7669
 	); */
-	background-color: #6c4a3e;
+	/* background-color: #6c4a3e; */
+	/* background-color: #9b7669; */
+	background-color: #c8a89b;
+	/* background-color: #764938; */
 	padding: 2%;
 }
 
@@ -13,7 +16,7 @@
 }
 
 .card__text {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .about__header {

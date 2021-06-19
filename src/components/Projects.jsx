@@ -1,11 +1,25 @@
 import React from "react";
 import "./css/Projects.css";
+import placeholder from "./assets/img.png";
 import {
 	Grid,
+	Card,
 	CardMedia,
+	makeStyles,
 } from "@material-ui/core";
 
+const useStyles = makeStyles({
+	root: {
+		maxWidth: 345,
+	},
+	// media: {
+	// 	height: 140,
+	// },
+});
+
 const Projects = () => {
+	const classes = useStyles();
+
 	return (
 		<section
 			className="ProjectWrapper"
@@ -22,15 +36,42 @@ const Projects = () => {
 					className="project__container"
 					xs={12}
 				>
-					<Grid item xs={12}>
-						<h1 className="project-title">
-							Bookhub
-						</h1>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={4}
+					>
+						<Card
+							className={
+								classes.root
+							}
+						>
+							<CardMedia
+								component="img"
+								alt="Bookhub Image"
+								height="250"
+								image={
+									placeholder
+								}
+							/>
+						</Card>
 					</Grid>
-					<Grid item xs={12}>
-						<div>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={8}
+					>
+						<Grid item xs={12}>
+							<h1 className="project__title">
+								Bookhub
+							</h1>
+						</Grid>
+						<div className="project__content">
 							<p>
-								A full-stack
+								<em>Bookhub</em>{" "}
+								is a full-stack
 								application where
 								book lovers can
 								search books to
@@ -39,57 +80,132 @@ const Projects = () => {
 								posts and interact
 								with other users.
 							</p>
-							<div>
-								<button>
-									See Repo
-								</button>
+							<div className="project-button__container">
+								<a
+									href="https://github.com/charlenebatiste/BookHub"
+									className="btn"
+								>
+									View Repo
+								</a>
 							</div>
 						</div>
 					</Grid>
 				</Grid>
-				<Grid container xs={12}>
-					<Grid item xs={12}>
-						<h1 className="project-title">
-							The Healthful Pantry
-						</h1>
+				<Grid
+					container
+					className="project__container"
+					xs={12}
+				>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={4}
+					>
+						<Card
+							className={
+								classes.root
+							}
+						>
+							<CardMedia
+								component="img"
+								alt="Bookhub Image"
+								height="250"
+								image={
+									placeholder
+								}
+							/>
+						</Card>
 					</Grid>
-					<Grid item>
-						<div>
-							<p>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={8}
+					>
+						<Grid item xs={12}>
+							<h1 className="project__title">
 								The Healthful
-								Pantry is a
-								fullstack MERN app
-								that strives to
-								provide users with
-								food allergies,
+								Pantry
+							</h1>
+						</Grid>
+						<div className="project__content">
+							<p>
+								<em>
+									The Healthful
+									Pantry
+								</em>{" "}
+								is a fullstack
+								MERN app that
+								strives to provide
+								users with food
+								allergies,
 								intolerances and
-								restrivcive diets
+								restrictive diets
 								a single place to
 								find recipes that
 								fit their
 								nutritional needs.
 							</p>
-							<div>
-								<button>
-									See Repo
-								</button>
+							<div className="project-button__container">
+								<a
+									href="https://github.com/charlenebatiste/the-healthful-pantry"
+									className="btn"
+								>
+									View Repo
+								</a>
 							</div>
 						</div>
 					</Grid>
 				</Grid>
-				<Grid container xs={12}>
-					<Grid item xs={12}>
-						<h1 className="project-title">
-							Floyd's Good Dog
-						</h1>
+				<Grid
+					container
+					className="project__container"
+					xs={12}
+				>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={4}
+					>
+						<Card
+							className={
+								classes.root
+							}
+						>
+							<CardMedia
+								component="img"
+								alt="Bookhub Image"
+								height="250"
+								image={
+									placeholder
+								}
+							/>
+						</Card>
 					</Grid>
-					<Grid item>
-						<div>
+					<Grid
+						item
+						xs={12}
+						md={6}
+						lg={8}
+					>
+						<Grid item xs={12}>
+							<h1 className="project__title">
+								Floyd's Good Dog
+							</h1>
+						</Grid>
+						<div className="project__content">
 							<p>
-								A website built
-								for a small
-								business in
-								Grovetown, GA.
+								<em>
+									Floyd's Good
+									Dog
+								</em>{" "}
+								was a website
+								built for a
+								family-owned and
+								operated business
+								in Grovetown, GA.
 								Floyd's Good Dog
 								is a fully
 								responsive website
@@ -99,10 +215,13 @@ const Projects = () => {
 								family-owned doggy
 								daycare
 							</p>
-							<div>
-								<button>
-									See Repo
-								</button>
+							<div className="project-button__container">
+								<a
+									href="https://github.com/charlenebatiste/floyds_good_dog"
+									className="btn"
+								>
+									View Repo
+								</a>
 							</div>
 						</div>
 					</Grid>
