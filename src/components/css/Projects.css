@@ -1,0 +1,13 @@
+.ProjectWrapper {
+	padding: 2%;
+	background-color: #c8a89b;
+}
+.projects__header {
+	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 2%;
+}
+
+.project__title {
+	text-align: center;
+}

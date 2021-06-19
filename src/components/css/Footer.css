@@ -1,0 +1,10 @@
+.FooterSection {
+	background-color: #3b1a0f;
+	color: #c4bdb6;
+	padding: 3vh 0;
+}
+.content {
+	font-family: "Nanum Myeongjo", serif;
+	font-weight: 800;
+	text-align: center;
+}
