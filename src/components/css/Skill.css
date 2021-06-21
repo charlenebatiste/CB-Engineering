@@ -1,7 +1,19 @@
 .SkillsSection {
+	background-image: linear-gradient(
+		to bottom,
+		#9b7669,
+		#c8a89b
+	);
 	/* background-color: #9b7669; */
+	/* background-color: #e9e9e9; */
+	padding: 3em;
+}
+
+.skills__content {
+	border: 2px solid black;
 	background-color: #e9e9e9;
-	padding: 2em;
+	border-radius: 1em;
+	padding: 2% 0;
 }
 
 .skills__header {
@@ -12,19 +24,16 @@
 
 .heading {
 	font-size: 1.5em;
-	text-decoration: underline;
 }
 
 .paper__heading {
+	font-family: "Nanum Myeongjo", serif;
 	text-align: center;
 	text-decoration: underline;
 }
 
-.paper__content {
-	border: 1px solid #6c4a3e;
-	background-color: #e9e9e9;
-}
-
-.paper__list {
-	list-style-type: none;
+.paper__text {
+	padding: 4%;
+	font-size: 1.2em;
+	line-height: 1.5em;
 }

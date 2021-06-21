@@ -20,93 +20,77 @@ export default function Skills() {
 			className="SkillsSection"
 			id="skills"
 		>
-			<div className="skills__header">
-				<h1 className="heading">
-					Technical Skills
-				</h1>
-			</div>
-			<div className={classes.root}>
-				<Grid
-					container
-					className={classes.root}
-					spacing={4}
-				>
+			<div className="skills__content">
+				<div className="skills__header">
+					<h1 className="heading">
+						✧ Technical Skills ✧
+					</h1>
+				</div>
+				<div className={classes.root}>
 					<Grid
-						className="paper__content"
-						item
-						xs={10}
-						sm={8}
-						md={4}
+						container
+						className={classes.root}
+						spacing={4}
 					>
-						<h2 className="paper__heading">
-							Front End
-						</h2>
-						<div>
-							<ul className="paper__list">
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>
-									Javascript
-								</li>
-								<li>
-									Responsive
-									Design
-								</li>
-								<li>Bootstrap</li>
-								<li>
-									Materialize
-								</li>
-								<li>React</li>
-							</ul>
-						</div>
-					</Grid>
-					<Grid
-						className="paper__content"
-						item
-						xs={10}
-						sm={8}
-						md={4}
-					>
-						<h2 className="paper__heading">
-							Back-End
-						</h2>
-						<ul className="paper__list">
-							<li>NodeJS</li>
-							<li>Express</li>
-							<li>SQL</li>
-							<li>MongoDB</li>
-							<li>AJAX</li>
-							<li>
-								RESTful
+						<Grid
+							className="paper__content"
+							item
+							xs={10}
+							sm={8}
+							md={4}
+						>
+							<h2 className="paper__heading">
+								Front End
+							</h2>
+							<div className="paper__text">
+								HTML ✧ CSS ✧
+								Javascript ✧
+								Responsive Design
+								✧ Bootstrap ✧
+								Materialize ✧
+								React
+							</div>
+						</Grid>
+						<Grid
+							className="paper__content"
+							item
+							xs={10}
+							sm={8}
+							md={4}
+						>
+							<h2 className="paper__heading">
+								Back-End
+							</h2>
+							<div className="paper__text">
+								NodeJS ✧ Express ✧
+								SQL ✧ MongoDB ✧
+								AJAX ✧ RESTful
 								Programming
-							</li>
-						</ul>
-					</Grid>
-					<Grid
-						className="paper__content"
-						item
-						xs={10}
-						sm={8}
-						md={4}
-					>
-						<h2 className="paper__heading">
-							Additional
-						</h2>
-						<ul className="paper__list">
-							<li>Git</li>
-							<li>Github</li>
-							<li>Slack</li>
-
-							<li>
+							</div>
+						</Grid>
+						<Grid
+							className="paper__content"
+							item
+							xs={10}
+							sm={8}
+							md={4}
+						>
+							<h2 className="paper__heading">
+								Additional
+							</h2>
+							<div className="paper__text">
+								Git ✧ Github ✧
+								Slack ✧
 								Object-Oriented
-								Programming
-							</li>
-							<li>Wireframes</li>
-							<li>Balsamiq</li>
-							<li>LucidChart</li>
-						</ul>
+								Programming ✧
+								Wireframes ✧
+								Balsamiq ✧
+								LucidChart ✧
+								Heroku
+							</div>
+						</Grid>
 					</Grid>
-				</Grid>
+				</div>
 			</div>
 		</section>
 	);

@@ -227,6 +227,9 @@ const Projects = () => {
 					</Grid>
 				</Grid>
 			</div>
+			<div>
+				<a href="#">See More</a>
+			</div>
 		</section>
 	);
 };
