@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/Projects.css";
-import placeholder from "./assets/img.png";
+import bookhubReel from "./assets/bookhub-reel.mov";
+import floydReel from "./assets/floyd-reel.mov";
 import {
 	Grid,
 	Card,
@@ -12,9 +13,6 @@ const useStyles = makeStyles({
 	root: {
 		maxWidth: 345,
 	},
-	// media: {
-	// 	height: 140,
-	// },
 });
 
 const Projects = () => {
@@ -48,12 +46,11 @@ const Projects = () => {
 							}
 						>
 							<CardMedia
-								component="img"
-								alt="Bookhub Image"
-								height="250"
+								component="video"
 								image={
-									placeholder
+									bookhubReel
 								}
+								controls
 							/>
 						</Card>
 					</Grid>
@@ -81,12 +78,23 @@ const Projects = () => {
 								with other users.
 							</p>
 							<div className="project-button__container">
-								<a
-									href="https://github.com/charlenebatiste/BookHub"
-									className="btn"
-								>
-									View Repo
-								</a>
+								<div className="btn">
+									<a
+										href="https://github.com/charlenebatiste/BookHub"
+										className="btn__link"
+									>
+										View Repo
+									</a>
+								</div>
+								<div className="btn">
+									<a
+										href="https://a-book-hub.herokuapp.com/"
+										className="btn__link"
+									>
+										Visit Live
+										App
+									</a>
+								</div>
 							</div>
 						</div>
 					</Grid>
@@ -109,11 +117,8 @@ const Projects = () => {
 						>
 							<CardMedia
 								component="img"
-								alt="Bookhub Image"
+								alt="healthful pantry image"
 								height="250"
-								image={
-									placeholder
-								}
 							/>
 						</Card>
 					</Grid>
@@ -148,12 +153,23 @@ const Projects = () => {
 								nutritional needs.
 							</p>
 							<div className="project-button__container">
-								<a
-									href="https://github.com/charlenebatiste/the-healthful-pantry"
-									className="btn"
-								>
-									View Repo
-								</a>
+								<div className="btn">
+									<a
+										href="https://github.com/charlenebatiste/the-healthful-pantry"
+										className="btn__link"
+									>
+										View Repo
+									</a>
+								</div>
+								<div className="btn">
+									<a
+										href="#"
+										className="btn__link"
+									>
+										Visit Live
+										App
+									</a>
+								</div>
 							</div>
 						</div>
 					</Grid>
@@ -175,12 +191,9 @@ const Projects = () => {
 							}
 						>
 							<CardMedia
-								component="img"
-								alt="Bookhub Image"
-								height="250"
-								image={
-									placeholder
-								}
+								component="video"
+								image={floydReel}
+								controls
 							/>
 						</Card>
 					</Grid>
@@ -216,20 +229,22 @@ const Projects = () => {
 								daycare
 							</p>
 							<div className="project-button__container">
-								<a
-									href="https://github.com/charlenebatiste/floyds_good_dog"
-									className="btn"
-								>
-									View Repo
-								</a>
+								<div className="btn">
+									<a
+										href="https://github.com/charlenebatiste/floyds_good_dog"
+										className="btn__link"
+									>
+										View Repo
+									</a>
+								</div>
 							</div>
 						</div>
 					</Grid>
 				</Grid>
 			</div>
-			<div>
+			{/* <div>
 				<a href="#">See More</a>
-			</div>
+			</div> */}
 		</section>
 	);
 };
