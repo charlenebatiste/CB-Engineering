@@ -45,9 +45,9 @@ const About = () => {
 					item
 					className="grid__item"
 					xs={12}
-					sm={7}
-					md={8}
-					lg={8}
+					sm={6}
+					md={7}
+					lg={7}
 				>
 					<div className="paragraph para__1">
 						<p className="card__text">

@@ -6,18 +6,9 @@ import {
 	Grid,
 	Card,
 	CardMedia,
-	makeStyles,
 } from "@material-ui/core";
 
-const useStyles = makeStyles({
-	root: {
-		maxWidth: 345,
-	},
-});
-
 const Projects = () => {
-	const classes = useStyles();
-
 	return (
 		<section
 			className="ProjectWrapper"
@@ -40,17 +31,23 @@ const Projects = () => {
 						md={6}
 						lg={4}
 					>
-						<Card
-							className={
-								classes.root
-							}
-						>
+						<Card className="media__wrapper">
 							<CardMedia
 								component="video"
 								image={
 									bookhubReel
 								}
-								controls
+								// controls
+								onMouseOver={(
+									event
+								) =>
+									event.target.play()
+								}
+								onMouseOut={(
+									event
+								) =>
+									event.target.pause()
+								}
 							/>
 						</Card>
 					</Grid>
@@ -110,11 +107,7 @@ const Projects = () => {
 						md={6}
 						lg={4}
 					>
-						<Card
-							className={
-								classes.root
-							}
-						>
+						<Card className="media__wrapper">
 							<CardMedia
 								component="img"
 								alt="healthful pantry video"
@@ -185,15 +178,20 @@ const Projects = () => {
 						md={6}
 						lg={4}
 					>
-						<Card
-							className={
-								classes.root
-							}
-						>
+						<Card className="media__wrapper">
 							<CardMedia
 								component="video"
 								image={floydReel}
-								controls
+								onMouseOver={(
+									event
+								) =>
+									event.target.play()
+								}
+								onMouseOut={(
+									event
+								) =>
+									event.target.pause()
+								}
 							/>
 						</Card>
 					</Grid>
