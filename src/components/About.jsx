@@ -29,7 +29,7 @@ const About = () => {
 			>
 				<Grid
 					item
-					className="grid__item"
+					className="grid__item img__container"
 					xs={10}
 					sm={5}
 					md={4}
@@ -47,7 +47,7 @@ const About = () => {
 					xs={12}
 					sm={7}
 					md={8}
-					lg={9}
+					lg={8}
 				>
 					<div className="paragraph para__1">
 						<p className="card__text">

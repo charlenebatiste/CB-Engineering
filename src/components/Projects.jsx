@@ -117,7 +117,7 @@ const Projects = () => {
 						>
 							<CardMedia
 								component="img"
-								alt="healthful pantry image"
+								alt="healthful pantry video"
 								height="250"
 							/>
 						</Card>
