@@ -11,7 +11,7 @@ const Nav = () => {
 			<Typography className="navWrapper">
 				<div>
 					<Link
-						className="navLink"
+						className="navLink hvr-grow"
 						smooth
 						to="#about"
 					>
@@ -20,7 +20,7 @@ const Nav = () => {
 				</div>
 				<div>
 					<Link
-						className="navLink"
+						className="navLink hvr-grow"
 						smooth
 						to="#skills"
 					>
@@ -29,7 +29,7 @@ const Nav = () => {
 				</div>
 				<div>
 					<Link
-						className="navLink"
+						className="navLink hvr-grow"
 						id="logo"
 						smooth
 						to="#home"
@@ -39,7 +39,7 @@ const Nav = () => {
 				</div>
 				<div>
 					<Link
-						className="navLink"
+						className="navLink hvr-grow"
 						smooth
 						to="#projects"
 					>
@@ -48,7 +48,7 @@ const Nav = () => {
 				</div>
 				<div>
 					<Link
-						className="navLink"
+						className="navLink hvr-grow"
 						smooth
 						to="#contact"
 					>

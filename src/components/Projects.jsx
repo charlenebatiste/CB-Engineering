@@ -75,7 +75,7 @@ const Projects = () => {
 								with other users.
 							</p>
 							<div className="project-button__container">
-								<div className="btn">
+								<div className="btn hvr-round-corners">
 									<a
 										href="https://github.com/charlenebatiste/BookHub"
 										className="btn__link"
@@ -83,7 +83,7 @@ const Projects = () => {
 										View Repo
 									</a>
 								</div>
-								<div className="btn">
+								<div className="btn hvr-round-corners">
 									<a
 										href="https://a-book-hub.herokuapp.com/"
 										className="btn__link"
@@ -146,7 +146,7 @@ const Projects = () => {
 								nutritional needs.
 							</p>
 							<div className="project-button__container">
-								<div className="btn">
+								<div className="btn hvr-round-corners">
 									<a
 										href="https://github.com/charlenebatiste/the-healthful-pantry"
 										className="btn__link"
@@ -154,7 +154,7 @@ const Projects = () => {
 										View Repo
 									</a>
 								</div>
-								<div className="btn">
+								<div className="btn hvr-round-corners">
 									<a
 										href="#"
 										className="btn__link"
@@ -195,7 +195,7 @@ const Projects = () => {
 							/>
 						</Card>
 					</Grid>
-					<Grid
+					<Grid 
 						item
 						xs={12}
 						md={6}
@@ -227,7 +227,7 @@ const Projects = () => {
 								daycare
 							</p>
 							<div className="project-button__container">
-								<div className="btn">
+								<div className="btn hvr-round-corners">
 									<a
 										href="https://github.com/charlenebatiste/floyds_good_dog"
 										className="btn__link"

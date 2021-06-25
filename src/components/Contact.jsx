@@ -17,13 +17,13 @@ const Contact = () => {
 			<div className="icon__items">
 				<a href="https://github.com/charlenebatiste">
 					<img
-						className="github__image"
+						className="github__image hvr-float-shadow"
 						src={github}
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/charlene-batiste/">
 					<img
-						className="linkedin__image"
+						className="linkedin__image hvr-float-shadow"
 						src={linkedin}
 					/>
 				</a>
