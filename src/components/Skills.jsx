@@ -1,4 +1,6 @@
 import "./css/Skill.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import React from "react";
 import {
@@ -9,10 +11,12 @@ import {
 const useStyles = makeStyles(() => ({
 	root: {
 		flexGrow: 1,
+        justifyContent: 'space-around'
 	},
 }));
 
 export default function Skills() {
+    AOS.init();
 	const classes = useStyles();
 
 	return (
@@ -20,9 +24,9 @@ export default function Skills() {
 			className="SkillsSection"
 			id="skills"
 		>
-			<div className="skills__content">
+			<div className="skills__content" >
 				<div className="skills__header">
-					<h1 className="heading">
+					<h1 className="heading" data-aos="flip-right">
 						✧ Technical Skills ✧
 					</h1>
 				</div>
@@ -34,9 +38,13 @@ export default function Skills() {
 					>
 						<Grid
 							className="paper__content"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="150"
+                            data-aos-offset="0" 
 							item
 							xs={10}
-							sm={8}
+							sm={10}
 							md={4}
 						>
 							<h2 className="paper__heading">
@@ -53,9 +61,13 @@ export default function Skills() {
 						</Grid>
 						<Grid
 							className="paper__content"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="150"
+                            data-aos-offset="0"
 							item
 							xs={10}
-							sm={8}
+							sm={10}
 							md={4}
 						>
 							<h2 className="paper__heading">
@@ -70,9 +82,13 @@ export default function Skills() {
 						</Grid>
 						<Grid
 							className="paper__content"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="150"
+                            data-aos-offset="0"
 							item
 							xs={10}
-							sm={8}
+							sm={10}
 							md={4}
 						>
 							<h2 className="paper__heading">

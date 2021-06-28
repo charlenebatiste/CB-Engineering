@@ -31,7 +31,9 @@ This repo is the location of my working portfolio.
 
 -   ReactJS
 -   Material UI
+- aos Library
 
 ## Resources
 
-[HashLink Documentation for scrollable navbar](https://www.npmjs.com/package/react-router-hash-link)
+* [HashLink Documentation for scrollable navbar](https://www.npmjs.com/package/react-router-hash-link)
+* [aos Library Documentation](https://github.com/michalsnik/aos/tree/v2)

@@ -8,16 +8,22 @@ import {
 	CardMedia,
 } from "@material-ui/core";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 const Projects = () => {
+    AOS.init();
 	return (
 		<section
 			className="ProjectWrapper"
 			id="projects"
 		>
-			<div className="projects__header">
+			<div className="projects__header" data-aos="zoom-in">
+            <hr className="hr__styles-pj" />
 				<h1 className="heading">
 					Projects
 				</h1>
+                <hr className="hr__styles-pj" />
 			</div>
 			<div>
 				<Grid
@@ -25,11 +31,13 @@ const Projects = () => {
 					className="project__container"
 					xs={12}
 				>
-					<Grid
+					<Grid data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-duration="500"
 						item
-						xs={12}
+						xs={10}
 						md={6}
-						lg={4}
+						lg={5}
 					>
 						<Card className="media__wrapper">
 							<CardMedia
@@ -52,12 +60,16 @@ const Projects = () => {
 						</Card>
 					</Grid>
 					<Grid
+                    className="project__text"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
 						item
 						xs={12}
 						md={6}
-						lg={8}
+						lg={7}
 					>
-						<Grid item xs={12}>
+						<Grid item  xs={12}>
 							<h1 className="project__title">
 								Bookhub
 							</h1>
@@ -75,7 +87,7 @@ const Projects = () => {
 								with other users.
 							</p>
 							<div className="project-button__container">
-								<div className="btn hvr-round-corners">
+								<div className="btn hvr-outline-out">
 									<a
 										href="https://github.com/charlenebatiste/BookHub"
 										className="btn__link"
@@ -83,7 +95,7 @@ const Projects = () => {
 										View Repo
 									</a>
 								</div>
-								<div className="btn hvr-round-corners">
+								<div className="btn hvr-outline-out">
 									<a
 										href="https://a-book-hub.herokuapp.com/"
 										className="btn__link"
@@ -102,10 +114,13 @@ const Projects = () => {
 					xs={12}
 				>
 					<Grid
+                    data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
 						item
-						xs={12}
+						xs={10}
 						md={6}
-						lg={4}
+						lg={5}
 					>
 						<Card className="media__wrapper">
 							<CardMedia
@@ -116,10 +131,14 @@ const Projects = () => {
 						</Card>
 					</Grid>
 					<Grid
+                    className="project__text"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
 						item
 						xs={12}
 						md={6}
-						lg={8}
+						lg={7}
 					>
 						<Grid item xs={12}>
 							<h1 className="project__title">
@@ -146,7 +165,7 @@ const Projects = () => {
 								nutritional needs.
 							</p>
 							<div className="project-button__container">
-								<div className="btn hvr-round-corners">
+								<div className="btn hvr-outline-out">
 									<a
 										href="https://github.com/charlenebatiste/the-healthful-pantry"
 										className="btn__link"
@@ -154,7 +173,7 @@ const Projects = () => {
 										View Repo
 									</a>
 								</div>
-								<div className="btn hvr-round-corners">
+								<div className="btn hvr-outline-out">
 									<a
 										href="#"
 										className="btn__link"
@@ -173,10 +192,13 @@ const Projects = () => {
 					xs={12}
 				>
 					<Grid
+                    data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
 						item
-						xs={12}
+						xs={10}
 						md={6}
-						lg={4}
+						lg={5}
 					>
 						<Card className="media__wrapper">
 							<CardMedia
@@ -196,10 +218,14 @@ const Projects = () => {
 						</Card>
 					</Grid>
 					<Grid 
+                    className="project__text"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
 						item
 						xs={12}
 						md={6}
-						lg={8}
+						lg={7}
 					>
 						<Grid item xs={12}>
 							<h1 className="project__title">
@@ -227,7 +253,7 @@ const Projects = () => {
 								daycare
 							</p>
 							<div className="project-button__container">
-								<div className="btn hvr-round-corners">
+								<div className="btn hvr-outline-out">
 									<a
 										href="https://github.com/charlenebatiste/floyds_good_dog"
 										className="btn__link"

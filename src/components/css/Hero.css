@@ -11,11 +11,12 @@
 .hero__content {
 	font-size: 1.8em;
 	font-weight: bold;
-	padding: 70vh 0 20vh 0;
+	padding: 65vh 0 20vh 0;
 }
 .hero__heading,
 .hero__subheading {
 	font-family: "Nanum Myeongjo", serif;
 	color: #c4bdb6;
 	text-shadow: -2px 2px #1a0c06;
+    margin: 2%;
 }

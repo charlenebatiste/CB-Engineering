@@ -9,10 +9,12 @@ const Contact = () => {
 			className="ContactSection"
 			id="contact"
 		>
-			<div className="about__header">
+			<div className="contact__header" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
 				<h1 className="heading">
 					☽ Contact Me ☾
 				</h1>
+                <p>Click the links to get in touch and let's build something together.</p>
 			</div>
 			<div className="icon__items">
 				<a href="https://github.com/charlenebatiste">
