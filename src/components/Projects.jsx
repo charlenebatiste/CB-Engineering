@@ -32,14 +32,15 @@ const Projects = () => {
 					xs={12}
 				>
 					<Grid data-aos="fade-right"
-                            data-aos-offset="500"
-                            data-aos-duration="500"
+                            data-aos-offset="300"
+                            data-aos-duration="300"
 						item
+                        className="grid__item"
 						xs={10}
 						md={6}
 						lg={5}
 					>
-						<Card className="media__wrapper">
+						<Card className="media__wrapper hvr-glow">
 							<CardMedia
 								component="video"
 								image={
@@ -62,8 +63,8 @@ const Projects = () => {
 					<Grid
                     className="project__text"
                     data-aos="fade-left"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
 						item
 						xs={12}
 						md={6}
@@ -71,7 +72,7 @@ const Projects = () => {
 					>
 						<Grid item  xs={12}>
 							<h1 className="project__title">
-								Bookhub
+								<u>Bookhub</u>
 							</h1>
 						</Grid>
 						<div className="project__content">
@@ -115,26 +116,27 @@ const Projects = () => {
 				>
 					<Grid
                     data-aos="fade-right"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
+                    className="grid__item"
 						item
 						xs={10}
 						md={6}
 						lg={5}
 					>
-						<Card className="media__wrapper">
+						<Card className="media__wrapper ">
 							<CardMedia
 								component="img"
 								alt="healthful pantry video"
-								height="250"
+								height="300"
 							/>
 						</Card>
 					</Grid>
 					<Grid
                     className="project__text"
                     data-aos="fade-left"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
 						item
 						xs={12}
 						md={6}
@@ -142,8 +144,8 @@ const Projects = () => {
 					>
 						<Grid item xs={12}>
 							<h1 className="project__title">
-								The Healthful
-								Pantry
+								<u>The Healthful
+								Pantry</u>
 							</h1>
 						</Grid>
 						<div className="project__content">
@@ -193,14 +195,15 @@ const Projects = () => {
 				>
 					<Grid
                     data-aos="fade-right"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
+                    className="grid__item"
 						item
 						xs={10}
 						md={6}
 						lg={5}
 					>
-						<Card className="media__wrapper">
+						<Card className="media__wrapper hvr-glow">
 							<CardMedia
 								component="video"
 								image={floydReel}
@@ -220,8 +223,8 @@ const Projects = () => {
 					<Grid 
                     className="project__text"
                     data-aos="fade-left"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
 						item
 						xs={12}
 						md={6}
@@ -229,7 +232,7 @@ const Projects = () => {
 					>
 						<Grid item xs={12}>
 							<h1 className="project__title">
-								Floyd's Good Dog
+								<u>Floyd's Good Dog</u>
 							</h1>
 						</Grid>
 						<div className="project__content">

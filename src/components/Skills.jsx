@@ -40,8 +40,8 @@ export default function Skills() {
 							className="paper__content"
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
-                            data-aos-delay="150"
-                            data-aos-offset="0" 
+                            data-aos-delay="100"
+                            data-aos-offset="100" 
 							item
 							xs={10}
 							sm={10}
@@ -63,8 +63,8 @@ export default function Skills() {
 							className="paper__content"
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
-                            data-aos-delay="150"
-                            data-aos-offset="0"
+                            data-aos-delay="100"
+                            data-aos-offset="100"
 							item
 							xs={10}
 							sm={10}
@@ -84,8 +84,8 @@ export default function Skills() {
 							className="paper__content"
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
-                            data-aos-delay="150"
-                            data-aos-offset="0"
+                            data-aos-delay="100"
+                            data-aos-offset="100"
 							item
 							xs={10}
 							sm={10}
