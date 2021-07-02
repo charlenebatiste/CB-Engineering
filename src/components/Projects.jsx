@@ -2,6 +2,7 @@ import React from "react";
 import "./css/Projects.css";
 import bookhubReel from "./assets/bookhub-reel.mov";
 import floydReel from "./assets/floyd-reel.mov";
+import healthfulReel from "./assets/healthful-pantry-reel.mov";
 import {
 	Grid,
 	Card,
@@ -125,10 +126,22 @@ const Projects = () => {
 						lg={5}
 					>
 						<Card className="media__wrapper ">
-							<CardMedia
-								component="img"
-								alt="healthful pantry video"
-								height="300"
+                        <CardMedia
+								component="video"
+								image={
+									healthfulReel
+								}
+								// controls
+								onMouseOver={(
+									event
+								) =>
+									event.target.play()
+								}
+								onMouseOut={(
+									event
+								) =>
+									event.target.pause()
+								}
 							/>
 						</Card>
 					</Grid>
@@ -173,15 +186,6 @@ const Projects = () => {
 										className="btn__link"
 									>
 										View Repo
-									</a>
-								</div>
-								<div className="btn hvr-outline-out">
-									<a
-										href="#"
-										className="btn__link"
-									>
-										Visit Live
-										App
 									</a>
 								</div>
 							</div>
