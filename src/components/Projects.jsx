@@ -3,6 +3,7 @@ import "./css/Projects.css";
 import bookhubReel from "./assets/bookhub-reel.mov";
 import floydReel from "./assets/floyd-reel.mov";
 import healthfulReel from "./assets/healthful-pantry-reel.mov";
+import compendmReel from "./assets/compendm-reel.mov";
 import {
 	Grid,
 	Card,
@@ -86,7 +87,7 @@ const Projects = () => {
 								add to their
 								Bookshelf, create
 								posts and interact
-								with other users.
+								with other users. It is fully responsive and built with an EJS frontend and SQL backend.
 							</p>
 							<div className="project-button__container">
 								<div className="btn hvr-outline-out">
@@ -100,6 +101,83 @@ const Projects = () => {
 								<div className="btn hvr-outline-out">
 									<a
 										href="https://a-book-hub.herokuapp.com/"
+										className="btn__link"
+									>
+										Visit Live
+										App
+									</a>
+								</div>
+							</div>
+						</div>
+					</Grid>
+				</Grid>
+				<Grid
+					container
+					className="project__container"
+					xs={12}
+				>
+					<Grid data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-duration="300"
+						item
+                        className="grid__item"
+						xs={10}
+						md={6}
+						lg={5}
+					>
+						<Card className="media__wrapper hvr-glow">
+							<CardMedia
+								component="video"
+								image={
+									compendmReel
+								}
+								// controls
+								onMouseOver={(
+									event
+								) =>
+									event.target.play()
+								}
+								onMouseOut={(
+									event
+								) =>
+									event.target.pause()
+								}
+							/>
+						</Card>
+					</Grid>
+					<Grid
+                    className="project__text"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="300"
+						item
+						xs={12}
+						md={6}
+						lg={7}
+					>
+						<Grid item  xs={12}>
+							<h1 className="project__title">
+								<u>CompenDM</u>
+							</h1>
+						</Grid>
+						<div className="project__content">
+							<p>
+								<em>CompenDM</em>{" "}
+								is a full-stack
+								django application built for TTRPG players as an online location to store their campaign notes.
+							</p>
+							<div className="project-button__container">
+								<div className="btn hvr-outline-out">
+									<a
+										href="https://github.com/charlenebatiste/compenDM"
+										className="btn__link"
+									>
+										View Repo
+									</a>
+								</div>
+								<div className="btn hvr-outline-out">
+									<a
+										href="https://compendm.herokuapp.com/"
 										className="btn__link"
 									>
 										Visit Live
@@ -188,6 +266,9 @@ const Projects = () => {
 										View Repo
 									</a>
 								</div>
+                                <div className="btn">
+										App Under Reconstruction
+								</div>
 							</div>
 						</div>
 					</Grid>
@@ -253,11 +334,11 @@ const Projects = () => {
 								Floyd's Good Dog
 								is a fully
 								responsive website
-								deisign to inform
+								designed to inform
 								and generate
 								clients for a
 								family-owned doggy
-								daycare
+								daycare.
 							</p>
 							<div className="project-button__container">
 								<div className="btn hvr-outline-out">
