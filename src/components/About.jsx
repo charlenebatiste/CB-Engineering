@@ -51,7 +51,7 @@ const About = () => {
 				</Grid>
 				<Grid
 					item
-					className="grid__item"
+					className="grid__item paragraph_wrapper"
 					xs={10}
 					sm={10}
 					md={7}
@@ -59,7 +59,7 @@ const About = () => {
 				>
 					<div className="paragraph para__1" data-aos="zoom-in">
 						<p className="card__text">
-							Hi. My name is
+                        ◇ My name is
 							Charlene Batiste and I
 							am a Software Engineer
 							with a passion for
@@ -67,12 +67,17 @@ const About = () => {
 							products and clean
 							designs oriented
 							around the user
-							experience.
+							experience. 
 						</p>
 					</div>
 					<div className="paragraph para__2" data-aos="zoom-in">
 						<p className="card__text">
-							I thrive in creative,
+                        ◇ Whether that's through writing, building a piece of art by hand or creating tales through collaborative story-telling in a table-top role playing game I am driven by a need to create and once introduced to the world of web-development discovered a way to create applications that could help people.
+						</p>
+					</div>
+					<div className="paragraph para__3" data-aos="zoom-in">
+						<p className="card__text">
+                            ◇ I thrive in creative,
 							team-centric
 							environments where my
 							previous work as a 911
@@ -81,11 +86,6 @@ const About = () => {
 							approach to
 							challenging
 							situations.
-						</p>
-					</div>
-					<div className="paragraph para__3" data-aos="zoom-in">
-						<p className="card__text">
-							Additional Info
 						</p>
 					</div>
 				</Grid>
