@@ -1,9 +1,20 @@
 import React from "react";
 import "./css/Projects.css";
+
+import HoverVideoPlayer from 'react-hover-video-player';
+
 import bookhubReel from "./assets/bookhub-reel.mov";
+import bookhubThumbnail from "./assets/bookhub-thumbnail.png";
+
 import floydReel from "./assets/floyd-reel.mov";
+import floydThumbnail from "./assets/fgd-thumbnail.png";
+
 import healthfulReel from "./assets/healthful-pantry-reel.mov";
+import healthfulThumbnail from "./assets/hp-thumbnail.png";
+
 import compendmReel from "./assets/compendm-reel.mov";
+import compendmThumbnail from "./assets/compendm-thumbnail.png";
+
 import {
 	Grid,
 	Card,
@@ -43,23 +54,24 @@ const Projects = () => {
 						lg={5}
 					>
 						<Card className="media__wrapper hvr-glow">
-							<CardMedia
-								component="video"
-								image={
-									bookhubReel
-								}
-								// controls
-								onMouseOver={(
-									event
-								) =>
-									event.target.play()
-								}
-								onMouseOut={(
-									event
-								) =>
-									event.target.pause()
-								}
-							/>
+                            <HoverVideoPlayer
+                                videoSrc={bookhubReel}
+                                pausedOverlay={
+                                    <img
+                                    src={bookhubThumbnail}
+                                    alt="Bookhub Homepage of an animated woman reading a book and a list of what the user can do with the bookhub app"
+                                    style={{
+                                        // Make the image expand to cover the video's dimensions
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                    }}
+                                    />
+                                }
+                                loadingOverlay={
+                                    <div className="loading-spinner-overlay" />
+                                }
+                            />
 						</Card>
 					</Grid>
 					<Grid
@@ -68,7 +80,7 @@ const Projects = () => {
                     data-aos-offset="300"
                     data-aos-duration="300"
 						item
-						xs={12}
+						xs={11}
 						md={6}
 						lg={7}
 					>
@@ -126,23 +138,23 @@ const Projects = () => {
 						lg={5}
 					>
 						<Card className="media__wrapper hvr-glow">
-							<CardMedia
-								component="video"
-								image={
-									compendmReel
-								}
-								// controls
-								onMouseOver={(
-									event
-								) =>
-									event.target.play()
-								}
-								onMouseOut={(
-									event
-								) =>
-									event.target.pause()
-								}
-							/>
+                            <HoverVideoPlayer
+                                videoSrc={compendmReel}
+                                pausedOverlay={
+                                    <img
+                                    src={compendmThumbnail}
+                                    alt="CompenDM Homepage of a large photo of dnd dice and an animated list of what the user can do with the bookhub app"
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                    }}
+                                    />
+                                }
+                                loadingOverlay={
+                                    <div className="loading-spinner-overlay" />
+                                }
+                            />
 						</Card>
 					</Grid>
 					<Grid
@@ -151,7 +163,7 @@ const Projects = () => {
                     data-aos-offset="300"
                     data-aos-duration="300"
 						item
-						xs={12}
+						xs={11}
 						md={6}
 						lg={7}
 					>
@@ -203,24 +215,24 @@ const Projects = () => {
 						md={6}
 						lg={5}
 					>
-						<Card className="media__wrapper ">
-                        <CardMedia
-								component="video"
-								image={
-									healthfulReel
-								}
-								// controls
-								onMouseOver={(
-									event
-								) =>
-									event.target.play()
-								}
-								onMouseOut={(
-									event
-								) =>
-									event.target.pause()
-								}
-							/>
+						<Card className="media__wrapper hvr-glow">
+                            <HoverVideoPlayer
+                                videoSrc={healthfulReel}
+                                pausedOverlay={
+                                    <img
+                                    src={healthfulThumbnail}
+                                    alt="Healthful Pantry Landing Page with tag line, a get started button and a bowl of salad topped with slice avocado."
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                    }}
+                                    />
+                                }
+                                loadingOverlay={
+                                    <div className="loading-spinner-overlay" />
+                                }
+                            />
 						</Card>
 					</Grid>
 					<Grid
@@ -229,7 +241,7 @@ const Projects = () => {
                     data-aos-offset="300"
                     data-aos-duration="300"
 						item
-						xs={12}
+						xs={11}
 						md={6}
 						lg={7}
 					>
@@ -289,20 +301,23 @@ const Projects = () => {
 						lg={5}
 					>
 						<Card className="media__wrapper hvr-glow">
-							<CardMedia
-								component="video"
-								image={floydReel}
-								onMouseOver={(
-									event
-								) =>
-									event.target.play()
-								}
-								onMouseOut={(
-									event
-								) =>
-									event.target.pause()
-								}
-							/>
+                        <HoverVideoPlayer
+                                videoSrc={floydReel}
+                                pausedOverlay={
+                                    <img
+                                    src={floydThumbnail}
+                                    alt="Floyd God Dog homepage. Happy orange dog looking at the camera inside it's run framed by pawprints"
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                    }}
+                                    />
+                                }
+                                loadingOverlay={
+                                    <div className="loading-spinner-overlay" />
+                                }
+                            />
 						</Card>
 					</Grid>
 					<Grid 
@@ -311,7 +326,7 @@ const Projects = () => {
                     data-aos-offset="300"
                     data-aos-duration="300"
 						item
-						xs={12}
+						xs={11}
 						md={6}
 						lg={7}
 					>

@@ -25,7 +25,29 @@ This repo is the location of my working portfolio.
 
 ## Known Issues
 
--   Getting the videos to play on hover.
+-   I had issues with getting my project videos to play on hover consistantly. Originally I imported my .mov files into Material-UI CardMedia's and created controls that would play on MouseOver and pause on MouseOut but on the live site it didn't always work. Sometime only three video would play on hover and I noticed the hover feature wouldn't even work without the user having already clicked on the page. So I installed the React Hover Video Player that handled the play and pause feature consistantly after I attached a thumbnail and .mov file to each Card.
+
+```jsx
+		<Card className="media__wrapper hvr-glow">
+                            <HoverVideoPlayer
+                                videoSrc={bookhubReel}
+                                pausedOverlay={
+                                    <img
+                                    src={bookhubThumbnail}
+                                    alt="Bookhub Homepage of an animated woman reading a book and a list of what the user can do with the bookhub app"
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                    }}
+                                    />
+                                }
+                                loadingOverlay={
+                                    <div className="loading-spinner-overlay" />
+                                }
+                            />
+						</Card>
+```
 
 ## Tech Stack
 
@@ -37,3 +59,4 @@ This repo is the location of my working portfolio.
 
 * [HashLink Documentation for scrollable navbar](https://www.npmjs.com/package/react-router-hash-link)
 * [aos Library Documentation](https://github.com/michalsnik/aos/tree/v2)
+* [React Hover Video Player](https://www.npmjs.com/package/react-hover-video-player)
