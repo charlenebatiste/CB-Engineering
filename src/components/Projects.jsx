@@ -38,7 +38,7 @@ const Projects = () => {
 				</h1>
                 <hr className="hr__styles-pj" />
 			</div>
-			<div>
+			<div className="animation__container">
 				<Grid
 					container
 					className="project__container"
