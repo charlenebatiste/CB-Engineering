@@ -1,14 +1,14 @@
 .ProjectWrapper {
 	padding: 2%;
-	background-color: #c8a89b;
+    background-color: #B49C8C;
 }
 .projects__header {
-	text-align: center;
-	font-size: 1.8em;
     padding-bottom: 2%;
-    color: #653019;
-    text-shadow: -3px 2px  #c4bdb6;
     margin: 1%;
+    text-align: center;
+	font-size: 1.8em;
+    color: black;
+    font-weight: bold;
 }
 
 .hr__styles-pj{
@@ -17,9 +17,7 @@
 
 .project__container {
 	padding: 2% 0;
-    /* display: flex;
-    justify-content: space-between; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .grid__item{
@@ -43,11 +41,9 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-
 .project__text{
     padding: 0 2%;
     font-size: 1.1em;
-    color: #2e1d18;
 }
 
 .project__title {
@@ -74,12 +70,12 @@
 
 .btn__link {
 	color: #186365;
-	/* color: #95abac; */
 	text-decoration: none;
+    font-size: 1.2em;
 }
 
 .btn__link:hover{
-    color: #764d85;
+    color: #8c428c;
 }
 
 /* Outline Out */

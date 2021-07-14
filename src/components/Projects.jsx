@@ -18,7 +18,6 @@ import compendmThumbnail from "./assets/compendm-thumbnail.png";
 import {
 	Grid,
 	Card,
-	CardMedia,
 } from "@material-ui/core";
 
 import AOS from 'aos';
@@ -32,9 +31,8 @@ const Projects = () => {
 			id="projects"
 		>
 			<div className="projects__header" data-aos="zoom-in">
-            <hr className="hr__styles-pj" />
 				<h1 className="heading">
-					Projects
+                ⚛︎ Projects ⚛︎
 				</h1>
                 <hr className="hr__styles-pj" />
 			</div>
@@ -123,6 +121,7 @@ const Projects = () => {
 						</div>
 					</Grid>
 				</Grid>
+                <hr className="hr__styles-pj" />
 				<Grid
 					container
 					className="project__container"
@@ -200,6 +199,7 @@ const Projects = () => {
 						</div>
 					</Grid>
 				</Grid>
+                <hr className="hr__styles-pj" />
 				<Grid
 					container
 					className="project__container"
@@ -285,6 +285,7 @@ const Projects = () => {
 						</div>
 					</Grid>
 				</Grid>
+                <hr className="hr__styles-pj" />
 				<Grid
 					container
 					className="project__container"
@@ -369,9 +370,6 @@ const Projects = () => {
 					</Grid>
 				</Grid>
 			</div>
-			{/* <div>
-				<a href="#">See More</a>
-			</div> */}
 		</section>
 	);
 };

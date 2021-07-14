@@ -1,6 +1,8 @@
 import "./css/Contact.css";
 import github from "./assets/github-logo.png";
 import linkedin from "./assets/linkedin-logo.png";
+import cvIcon from "./assets/resumeicon.png"
+
 import React from "react";
 
 const Contact = () => {
@@ -27,6 +29,12 @@ const Contact = () => {
 					<img
 						className="linkedin__image hvr-float-shadow"
 						src={linkedin}
+					/>
+				</a>
+				<a href="https://docs.google.com/document/d/1ei1KeqwVvXPRMUjc0oh-kIPvla05KGIGtUR0ZE8r2N4/edit?usp=sharing">
+					<img
+						className="cv__image hvr-float-shadow"
+						src={cvIcon}
 					/>
 				</a>
 			</div>

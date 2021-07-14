@@ -1,7 +1,9 @@
 .navWrapper {
 	width: 100vw;
-	background-color: #e7e9eb82;
+	background-color: #e7e9eb;
+    box-shadow: 2px 2px 6px #484848;
 	z-index: 1;
+    padding: 1% 0;
 }
 
 .navbar-links{
@@ -13,7 +15,7 @@
 	font-family: "Nanum Myeongjo", serif;
 	font-weight: 800;
 	text-decoration: none;
-	color: #764d85;
+	color: #186365;
 }
 
 /* Grow */
@@ -27,12 +29,13 @@
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    color: rebeccapurple;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    /* color: #903000; */
+    color: #8c428c;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-  }
+}
 
 
 #logo {

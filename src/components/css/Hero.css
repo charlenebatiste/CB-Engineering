@@ -17,6 +17,9 @@
     font-weight: bolder;
     font-size: 2em;
 }
+.hero__subheading {
+    font-size: 1.5em;
+}
 .hero__heading,
 .hero__subheading {
 	font-family: "Nanum Myeongjo", serif;

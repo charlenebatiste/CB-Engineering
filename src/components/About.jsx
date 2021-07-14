@@ -27,11 +27,13 @@ const About = () => {
     AOS.init();
 	const classes = useStyles();
 	return (
-		<div className="AboutSection" id="about">
+		<div className="AboutSection"  id="about">
 			<Grid
 				container
 				className={classes.root}
                 id = "about__content"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in"
 				spacing="2"
 			>
 				<Grid 
@@ -57,7 +59,7 @@ const About = () => {
 					lg={8}
 				>
                     <div className="about__header" >
-            <hr className="hr__styles" />
+                    <hr className="hr__styles" />
 				<h1 className="heading">
 					☽ About Me ☾
 				</h1>

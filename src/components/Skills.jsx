@@ -13,17 +13,13 @@ import {
     CardContent
 } from "@material-ui/core/";
 
-
-
-
-
 const useStyles = makeStyles(() => ({
 	root: {
 		flexGrow: 1,
         justifyContent: 'space-around',
 	},
     cardroot: {
-        height: "100%"
+        height: "100%",
     },
     bullet: {
         display: 'inline-block',
@@ -70,9 +66,9 @@ export default function Skills() {
 							item
 							xs={10}
 							sm={10}
-							md={3}
+							md={4}
 						>
-                            <Card className={classes.cardroot} id="cardRoot">
+                            <Card className={classes.cardroot} variant="outlined" id="cardRoot">
                                 <CardContent>
                                 <div className="iconContainer">
                                 <FontAwesomeIcon icon={faCode} size = '2x'/>
@@ -87,7 +83,7 @@ export default function Skills() {
 								Responsive Design
 								✧ Bootstrap ✧
 								Materialize ✧
-								React
+								React ✧ Django  
 							</div>
                                 </CardContent>
                             </Card>
@@ -101,9 +97,9 @@ export default function Skills() {
 							item
 							xs={10}
 							sm={10}
-							md={3}
+							md={4}
 						>
-                            <Card className={classes.cardroot} id="cardRoot">
+                            <Card className={classes.cardroot} variant="outlined" id="cardRoot">
                                 <CardContent>
                                 <div className="iconContainer">
                                 <FontAwesomeIcon icon={faArchive} size = '2x'/>
@@ -114,7 +110,7 @@ export default function Skills() {
                             <hr className="hr__styles" />
                             <div className="paper__text">
                             NodeJS ✧ Express ✧
-								SQL ✧ MongoDB ✧
+								SQL ✧ MongoDB ✧ Django ✧ 
 								AJAX ✧ RESTful
 								Programming
 							</div>
@@ -130,9 +126,9 @@ export default function Skills() {
 							item
 							xs={10}
 							sm={10}
-							md={3}
+							md={4}
 						>
-                            <Card className={classes.cardroot} id="cardRoot">
+                            <Card className={classes.cardroot} variant="outlined" id="cardRoot">
                                 <CardContent>
                                 <div className="iconContainer">
                                 <FontAwesomeIcon icon={faCodeBranch} size = '2x'/>
