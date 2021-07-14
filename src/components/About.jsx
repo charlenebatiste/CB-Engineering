@@ -13,8 +13,14 @@ import {
 } from "@material-ui/core/";
 const useStyles = makeStyles({
 	media: {
-		borderRadius: "10%",
+		borderRadius: "5%",
+        alignSelf: "center"
 	},
+    root: {
+        width: "85%",
+        margin: "auto",
+        boxShadow: "0 0 8px 8px #e9e9e9 inset;"
+    }
 });
 
 const About = () => {
@@ -22,24 +28,17 @@ const About = () => {
 	const classes = useStyles();
 	return (
 		<div className="AboutSection" id="about">
-			<div className="about__header" data-aos="zoom-in">
-            <hr className="hr__styles" />
-				<h1 className="heading">
-					☽ About Me ☾
-				</h1>
-                <hr className="hr__styles" />
-			</div>
-            
 			<Grid
 				container
-				className="about__content"
+				className={classes.root}
+                id = "about__content"
 				spacing="2"
 			>
-				<Grid data-aos="fade-right"
+				<Grid 
 					item
 					className="grid__item img__container"
 					xs={10}
-					sm={8}
+					sm={6}
 					md={4}
 					lg={3}
 				>
@@ -54,12 +53,19 @@ const About = () => {
 					className="grid__item paragraph_wrapper"
 					xs={10}
 					sm={10}
-					md={7}
+					md={10}
 					lg={8}
 				>
-					<div className="paragraph para__1" data-aos="zoom-in">
+                    <div className="about__header" >
+            <hr className="hr__styles" />
+				<h1 className="heading">
+					☽ About Me ☾
+				</h1>
+                <hr className="hr__styles" />
+			</div>
+					<div className="paragraph">
 						<p className="card__text">
-                        ◇ My name is
+                        My name is
 							Charlene Batiste and I
 							am a Software Engineer
 							with a passion for
@@ -67,17 +73,7 @@ const About = () => {
 							products and clean
 							designs oriented
 							around the user
-							experience. 
-						</p>
-					</div>
-					<div className="paragraph para__2" data-aos="zoom-in">
-						<p className="card__text">
-                        ◇ Whether that's through writing, building a piece of art by hand or creating tales through collaborative story-telling in a table-top role playing game I am driven by a need to create and once introduced to the world of web-development discovered a way to create applications that could help people.
-						</p>
-					</div>
-					<div className="paragraph para__3" data-aos="zoom-in">
-						<p className="card__text">
-                            ◇ I thrive in creative,
+							experience. Whether that's through writing, building a piece of art by hand or creating tales through collaborative story-telling in a table-top role playing game I am driven by a need to create and once introduced to the world of web-development discovered a way to create applications that could help people. I thrive in creative,
 							team-centric
 							environments where my
 							previous work as a 911
