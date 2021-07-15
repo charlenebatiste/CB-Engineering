@@ -11,6 +11,7 @@ import {
 	Grid,
 	CardMedia,
 } from "@material-ui/core/";
+
 const useStyles = makeStyles({
 	media: {
 		borderRadius: "5%",

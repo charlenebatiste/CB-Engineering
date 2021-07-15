@@ -30,16 +30,17 @@ const Projects = () => {
 			className="ProjectWrapper"
 			id="projects"
 		>
+            
 			<div className="projects__header" data-aos="zoom-in">
 				<h1 className="heading">
                 ⚛︎ Projects ⚛︎
 				</h1>
                 <hr className="hr__styles-pj" />
 			</div>
-			<div className="animation__container">
+			<div className="animation__container ">
 				<Grid
 					container
-					className="project__container"
+					className="project__container projects__content"
 					xs={12}
 				>
 					<Grid data-aos="fade-right"
@@ -370,6 +371,7 @@ const Projects = () => {
 					</Grid>
 				</Grid>
 			</div>
+            {/* </div> */}
 		</section>
 	);
 };
