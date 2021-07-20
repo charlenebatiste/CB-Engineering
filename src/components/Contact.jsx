@@ -1,7 +1,7 @@
 import "./css/Contact.css";
 import github from "./assets/github-logo.png";
 import linkedin from "./assets/linkedin-logo.png";
-import cvIcon from "./assets/resumeicon.png"
+import cvIcon from "./assets/resumeicon.png";
 
 import React from "react";
 
@@ -11,15 +11,22 @@ const Contact = () => {
 			className="ContactSection"
 			id="contact"
 		>
-			<div className="contact__header" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
+			<div
+				className="contact__header"
+				data-aos="fade-up"
+				data-aos-anchor-placement="top-bottom"
+			>
 				<h1 className="heading">
 					☽ Contact Me ☾
 				</h1>
-                <p>Click the links to get in touch and let's build something together.</p>
+				<p>
+					Click the links to get in
+					touch and let's build
+					something together.
+				</p>
 			</div>
 			<div className="icon__items">
-            <a href="https://www.linkedin.com/in/charlene-batiste/">
+				<a href="https://www.linkedin.com/in/charlene-batiste/">
 					<img
 						className="linkedin__image hvr-float-shadow"
 						src={linkedin}
