@@ -444,7 +444,7 @@ const Projects = () => {
 									Tech Stack
 								</h3>
 								<p>
-									HTML5, CSS3,
+									HTML5, SASS,
 									Javascript
 								</p>
 							</div>
